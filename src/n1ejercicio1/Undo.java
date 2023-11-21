@@ -26,16 +26,21 @@ public class Undo {
 	}
 
 	public void listCommand() {
-		System.out.println("commandHistory:");
-		for (String command : commandHistory) {
-			System.out.println(command);
+		if (commandHistory.isEmpty()) {
+			System.out.println("commandHistory está vacio.");
+		} else {
+			System.out.println("commandHistory:");
+			for (String command : commandHistory) {
+				System.out.println(command);
+			}
 		}
+
 		System.out.println("");
 	}
 
 	public void removeLastComand() {
 		if (commandHistory.isEmpty()) {
-			System.out.println("commandHistory está vacio.\n");
+			System.out.println("No se puede deshacer, commandHistory está vacio.\n");
 		} else {
 			String removedCommand = commandHistory.remove(commandHistory.size() - 1);
 			System.out.println("Eliminada " + removedCommand + " de commandHistory.\n");
