@@ -7,6 +7,7 @@ public class MainN1Ex1 {
 		Undo obj2 = Undo.getInstance();
 
 		obj1.listCommand();
+
 		obj2.removeLastComand();
 
 		obj1.addCommand("Command1");
