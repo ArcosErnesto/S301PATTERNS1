@@ -19,7 +19,7 @@ public class SpainContact implements Contact {
 
 	@Override
 	public String toString() {
-		return "SpainContact: Addres: " + address + ", phone: " + phone + ".";
+		return "SpainContact:\n" + "Addres: " + address + "\n" + "phone: " + phone + ".\n";
 	}
 
 }

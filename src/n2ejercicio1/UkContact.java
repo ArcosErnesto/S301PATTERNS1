@@ -19,7 +19,7 @@ public class UkContact implements Contact {
 
 	@Override
 	public String toString() {
-		return "UkContact: Address: " + address + ", phone: " + phone + ".";
+		return "UkContact:\n" + "Address: " + address + "\n" + "phone: " + phone + ".\n";
 	}
 
 }

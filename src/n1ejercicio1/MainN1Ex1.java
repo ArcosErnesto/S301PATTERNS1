@@ -8,7 +8,7 @@ public class MainN1Ex1 {
 
 		obj1.listCommand();
 
-		obj2.removeLastComand();
+		obj2.undo();
 
 		obj1.addCommand("Command1");
 		obj2.addCommand("Command2");
@@ -16,7 +16,7 @@ public class MainN1Ex1 {
 
 		obj2.listCommand();
 
-		obj1.removeLastComand();
+		obj1.undo();
 
 		obj2.listCommand();
 

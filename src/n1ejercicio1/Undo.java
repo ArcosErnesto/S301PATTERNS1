@@ -15,8 +15,10 @@ public class Undo {
 	public static Undo getInstance() {
 		if (instance == null) {
 			instance = new Undo();
+			System.out.println("Creando instancia.\n");
+		} else {
+			System.out.println("Instancia ya creada\n");
 		}
-		System.out.println("Instancia OK\n");
 		return instance;
 	}
 
@@ -38,7 +40,7 @@ public class Undo {
 		System.out.println("");
 	}
 
-	public void removeLastComand() {
+	public void undo() {
 		if (commandHistory.isEmpty()) {
 			System.out.println("No se puede deshacer, commandHistory está vacio.\n");
 		} else {
