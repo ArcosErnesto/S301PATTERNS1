@@ -5,11 +5,17 @@ public class BrakeVehicle implements Action {
 
 	public BrakeVehicle(Vehicle vehicle) {
 		this.vehicle = vehicle;
+		System.out.println("Creada Action BrakeVehicle para " + vehicle.getName() + ".");
 	}
 
 	@Override
 	public void execute() {
 		vehicle.brake();
+	}
+
+	@Override
+	public String toString() {
+		return "BrakeVehicle [vehicle=" + vehicle.getName() + "]";
 	}
 
 }

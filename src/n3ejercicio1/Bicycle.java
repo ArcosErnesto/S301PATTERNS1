@@ -4,7 +4,7 @@ public class Bicycle extends Vehicle {
 
 	public Bicycle(String name) {
 		super(name);
-		// TODO Auto-generated constructor stub
+		System.out.println("Creado nuevo Bicycle.");
 	}
 
 	@Override

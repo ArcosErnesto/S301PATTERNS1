@@ -1,9 +1,9 @@
 package n2ejercicio1;
 
-public class UkFactory extends AbstractFactory {
+public class UkFactory implements AbstractFactory {
 
 	@Override
-	Contact getContact() {
+	public Contact getContact() {
 		System.out.println("Creado nuevo UkContact.");
 		return new UkContact();
 	}

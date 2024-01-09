@@ -1,5 +1,5 @@
 package n2ejercicio1;
 
-public abstract class AbstractFactory {
-	abstract Contact getContact();
+public interface AbstractFactory {
+	public Contact getContact();
 }

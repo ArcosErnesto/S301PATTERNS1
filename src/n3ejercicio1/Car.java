@@ -4,7 +4,7 @@ public class Car extends Vehicle {
 
 	public Car(String name) {
 		super(name);
-		// TODO Auto-generated constructor stub
+		System.out.println("Creado nuevo Car.");
 	}
 
 	@Override

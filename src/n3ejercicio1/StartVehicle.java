@@ -5,9 +5,16 @@ public class StartVehicle implements Action {
 
 	public StartVehicle(Vehicle vehicle) {
 		this.vehicle = vehicle;
+		System.out.println("Creada Action StartVehicle para " + vehicle.getName() + ".");
 	}
 
 	public void execute() {
 		vehicle.start();
 	}
+
+	@Override
+	public String toString() {
+		return "StartVehicle [vehicle=" + vehicle.getName() + "]";
+	}
+
 }

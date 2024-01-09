@@ -13,6 +13,10 @@ public class MainN1Ex1 {
 		obj1.addCommand("Command1");
 		obj2.addCommand("Command2");
 		obj1.addCommand("Command3");
+		obj2.addCommand("Command4");
+		obj1.addCommand("Command5");
+		obj2.addCommand("Command6");
+		obj1.addCommand("Command7");
 
 		obj2.listCommand();
 

@@ -4,7 +4,7 @@ public class Plane extends Vehicle {
 
 	public Plane(String name) {
 		super(name);
-		// TODO Auto-generated constructor stub
+		System.out.println("Creado nuevo Plane.");
 	}
 
 	@Override
